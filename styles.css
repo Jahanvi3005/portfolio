@@ -1,4 +1,4 @@
-/* --- Global Resets & Variables --- */
+
 :root {
     --bg-main: #fbfbfd;
     --bg-surface: rgba(255, 255, 255, 0.6);
@@ -68,10 +68,10 @@ html {
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid var(--border-glass);
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05); /* Light shadow */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05); 
 }
 
-/* --- Navigation --- */
+
 .navbar {
     position: fixed;
     top: 0; width: 100%;
@@ -81,7 +81,7 @@ html {
 }
 
 .navbar.scrolled {
-    background: rgba(251, 251, 253, 0.8); /* Light navbar bg */
+    background: rgba(251, 251, 253, 0.8);
     backdrop-filter: blur(16px);
     padding: 1rem 0;
     border-bottom: 1px solid var(--border-glass);
@@ -153,7 +153,6 @@ h1, h2, h3 { font-family: 'Outfit', sans-serif; }
     box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3);
 }
 
-/* --- Hero Section --- */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -189,7 +188,7 @@ h1, h2, h3 { font-family: 'Outfit', sans-serif; }
     line-height: 1.6;
 }
 
-/* --- Projects Section --- */
+
 .projects-section {
     padding: 5rem 2rem 10rem 2rem;
     max-width: 1200px;
