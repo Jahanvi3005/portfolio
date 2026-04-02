@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Dynamic Navbar styling on scroll
+    
     const navbar = document.getElementById('navbar');
     
     window.addEventListener('scroll', () => {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for scroll animations
+    
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -21,17 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: Stop observing once visible if you only want it to animate once
+                
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Select all elements with the fade-in-up class
+    
     const fadeElements = document.querySelectorAll('.fade-in-up');
     fadeElements.forEach(el => observer.observe(el));
     
-    // Interactive Glow Orb responding to mouse movement subtly
+    
     const orbs = document.querySelectorAll('.glow-orb');
     let maxOffset = 30; // max px movement
     
